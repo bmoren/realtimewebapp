@@ -26,7 +26,7 @@ In this example we create an emoji sharer where when we click on a screen positi
 1. `node app.js`
 1. gogogadget!
 
-###Get started on your own w/o this repo (new node.js project):
+### Get started on your own w/o this repo (new node.js project):
 1. `mkdir` / make a new project folder
 1. `cd` into the new project folder
 1. `npm init`
