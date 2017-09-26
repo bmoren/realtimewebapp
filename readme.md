@@ -1,6 +1,6 @@
 ### real time web app foundation
 ##### MCAD Advanced Web + Screen
-
+---
 The files contained here are the foundation of a one to many (and many to one) realtime web app.
 
 We are using express.js to serve out our static HTML files (line 7 in app.js) and using socket.io to handle real-time communication and messaging (lines 10-19 in app.js and lines 23 & 27 in public/frontend.js and line 12 in index.html) Through this combination we can have realtime communication across many devices.
