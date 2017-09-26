@@ -1,6 +1,5 @@
-## real time web app foundation
-#### MCAD Advanced Web + Screen
----
+### real time web app foundation
+##### MCAD Advanced Web + Screen
 
 The files contained here are the foundation of a one to many (and many to one) realtime web app.
 
