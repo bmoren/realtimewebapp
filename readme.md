@@ -8,7 +8,12 @@ We are using express.js to serve out our static HTML files (line 7 in app.js) an
 In this example we create an emoji sharer where when we click on a screen position, we replicate an emoji in that position on everyone's screen who is connected.
 
 ---
-### do this first in terminal.app (install node and npm using nvm)!
+### to boot the server when you want to work
+1. `cd` into your project directory
+2. `node app.js` to use node to boot up your app.js file on the server
+3. point your browser to `localhost:3000` and verify that everything is working (in 2 tabs)
+
+### To install node and npm using nvm do the following first in terminal.app !
 1. `xcode-select --install` install os X developer tool scripts
 1. install [nvm](https://github.com/creationix/nvm)
 1. `cd ~`
@@ -19,14 +24,14 @@ In this example we create an emoji sharer where when we click on a screen positi
 1. `node -v` to verify install of node
 1. `npm -v` to verify install of npm
 
-### Get started with this repo
+### Get started with this repo (for the first time)
 1. download the .zip of, or `git clone` this project
 1. `cd` into the downloaded project folder
 1. run `npm install`
 1. `node app.js`
 1. gogogadget!
 
-###Get started on your own w/o this repo (new node.js project):
+###Get started on your own without this repo by creating a new node.js project:
 1. `mkdir` / make a new project folder
 1. `cd` into the new project folder
 1. `npm init`
