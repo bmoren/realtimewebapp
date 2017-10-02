@@ -8,7 +8,7 @@ We are using express.js to serve out our static HTML files (line 7 in app.js) an
 In this example we create an emoji sharer where when we click on a screen position, we replicate an emoji in that position on everyone's screen who is connected.
 
 ---
-### to boot the server when you want to work
+### To boot the server when you want to work
 1. `cd` into your project directory
 2. `node app.js` to use node to boot up your app.js file on the server
 3. point your browser to `localhost:3000` and verify that everything is working
@@ -31,7 +31,7 @@ In this example we create an emoji sharer where when we click on a screen positi
 1. `node app.js`
 1. gogogadget!
 
-###Get started on your own without this repo by creating a new node.js project:
+### Get started on your own without this repo by creating a new node.js project:
 1. `mkdir` / make a new project folder
 1. `cd` into the new project folder
 1. `npm init`
