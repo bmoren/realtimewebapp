@@ -11,7 +11,7 @@ In this example we create an emoji sharer where when we click on a screen positi
 ### to boot the server when you want to work
 1. `cd` into your project directory
 2. `node app.js` to use node to boot up your app.js file on the server
-3. point your browser to `localhost:3000` and verify that everything is working (in 2 tabs)
+3. point your browser to `localhost:3000` and verify that everything is working
 
 ### To install node and npm using nvm do the following first in terminal.app !
 1. `xcode-select --install` install os X developer tool scripts
