@@ -9,11 +9,11 @@ $('body').click(function(event) {
 
   console.log(event.clientX, event.clientY)
 
-  $('<div>😎</div>').css({
-    'position': 'absolute',
-    'top': event.clientY,
-    'left': event.clientX
-  }).appendTo('body')
+  // $('<div>😎</div>').css({
+  //   'position': 'absolute',
+  //   'top': event.clientY,
+  //   'left': event.clientX
+  // }).appendTo('body')
 
   var dataToSend = {
     'top': event.clientY,
@@ -31,6 +31,22 @@ socket.on('massSendEmoji', function(data){
     'top': data.top,
     'left': data.left
   }).appendTo('body')
+
+})
+
+socket.on('startingEmoji', function(data){
+  console.log(data)
+
+  data.forEach(function(dataPoint){
+    $('<div>👻</div>').css({
+      'position': 'absolute',
+      'top': dataPoint.top,
+      'left': dataPoint.left
+    }).appendTo('body')
+
+  })
+
+
 
 })
 
