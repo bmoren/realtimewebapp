@@ -1,36 +1,38 @@
-var socket = io.connect();
-
-socket.on('connect', function(data){
-  console.log("we connected to the server as" + socket.id)
-})
+var urlToServer = "http://localhost:3000"
 
 
-$('body').click(function(event) {
+$('.submit').click(function(event) {
 
-  console.log(event.clientX, event.clientY)
+  console.log( $('#enteredText').val() )
 
-  $('<div>😎</div>').css({
-    'position': 'absolute',
-    'top': event.clientY,
-    'left': event.clientX
-  }).appendTo('body')
+  var text = $('#enteredText').val() //store it
+  $('#enteredText').val("") //reset
 
-  var dataToSend = {
-    'top': event.clientY,
-    'left': event.clientX
+  if(text){
+    $.post( urlToServer, {"text":text})
+    .done(function( data ) {
+      console.log( data );
+    });
+  }else{
+    console.error('no text!') 
   }
 
-  socket.emit('addEmoji', dataToSend); // send the data up to the server
+
 
 });
 
-socket.on('massSendEmoji', function(data){
 
-  $('<div>😘</div>').css({
-    'position': 'absolute',
-    'top': data.top,
-    'left': data.left
-  }).appendTo('body')
+$('.fetch').click(function(event){
+
+  $.get(urlToServer+"/fetch").done(function(data){
+
+    console.log(data)
+
+    $('.fetchedData').html(data.text)
+  })
+
 
 })
+
+
 
