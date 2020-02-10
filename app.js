@@ -19,6 +19,7 @@ io.on('connection', function(socket){
 })
 
 //makes the app listen for requests on port 3000
-server.listen(3000, function(){
+let port = process.env.PORT || 3000
+server.listen(port, function(){
   console.log("app listening on port 3000!")
 })
