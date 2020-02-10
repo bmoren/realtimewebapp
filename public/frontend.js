@@ -9,7 +9,7 @@ $('body').click(function(event) {
 
   console.log(event.clientX, event.clientY)
 
-  $('<div>😎</div>').css({
+  $('<div>🙂</div>').css({
     'position': 'absolute',
     'top': event.clientY,
     'left': event.clientX
@@ -26,11 +26,10 @@ $('body').click(function(event) {
 
 socket.on('massSendEmoji', function(data){
 
-  $('<div>😘</div>').css({
+  $('<div>😎</div>').css({
     'position': 'absolute',
     'top': data.top,
     'left': data.left
   }).appendTo('body')
 
 })
-

@@ -1,7 +1,7 @@
 var express = require('express'); //make express available
 var app = express(); //invoke express
-var server = require('http').Server( app ) // start the express server instance
-var io = require('socket.io')(server) // use socket.io for real time connections aka. wesockets
+var server = require('http').Server( app ) // start a server and add express to the server
+var io = require('socket.io')(server) // add socket.io and attach it to the sertver.
 
 //serve out any static files in our public HTML folder
 app.use(express.static('public'))
